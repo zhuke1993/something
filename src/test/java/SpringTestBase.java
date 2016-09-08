@@ -1,4 +1,4 @@
-import com.zhuke.something.guava.UserInfoService;
+import com.zhuke.something.transaction.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -15,6 +15,6 @@ public class SpringTestBase extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testInsert() throws Exception {
-        userInfoService.insert();
+        userInfoService.insertInTemplate();
     }
 }
