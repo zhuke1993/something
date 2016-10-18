@@ -1,4 +1,3 @@
-import com.zhuke.something.transaction.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -9,12 +8,11 @@ import org.testng.annotations.Test;
  */
 @ContextConfiguration(locations = {"classpath:applicationContext.xml"})
 public class SpringTestBase extends AbstractTestNGSpringContextTests {
-
     @Autowired
-    private UserInfoService userInfoService;
+    private String test;
 
     @Test
-    public void testInsert() throws Exception {
-        userInfoService.insertInTemplate();
+    public void jfdlsaj() {
+        System.out.println(test);
     }
 }

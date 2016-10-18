@@ -44,8 +44,8 @@
         <constructor-arg type="org.springframework.transaction.PlatformTransactionManager" ref="transactionManager"/>
         <constructor-arg type="org.springframework.transaction.TransactionDefinition" ref="transactionDefinition"/>
     </bean>
+    <!--开启事务配置的注解方式-->
     <tx:annotation-driven transaction-manager="transactionManager"/>
+    <!--开启aspectj自动代理-->
     <aop:aspectj-autoproxy/>
-
-    <flow:flow-executor
 </beans>
